@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(222, 157, 200);
+    color: #fafafa;
+    font-family: 'Montserrat', 'Sans-serif';
+    padding-top: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+section {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 25px;
+    color: #2a2a2a;
+    border-radius: 5px;
+    box-shadow: 5px 12px 10px rgba(0, 0, 0, 0.115);
+    margin: auto;
+}
+
+.numberInput {
+   margin: 10px 0 40px 0;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #DEDEDE;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Sans-serif";
+}
+
+.input:focus {
+    border-color: rgba(109, 83, 98, 0.45);
+    /* border-color: #786a73; */
+    outline: none;
+}
+
+span {
+    display: block;
+    overflow: hidden;
+    padding-right: 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DEDEDE;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(182, 96, 153);
+    color: #fafafa;
+    padding: 10px;
+    border: 1px solid rgb(
+        182, 96, 153);
+    border-radius: 2px;
+    cursor: pointer;
+    font-variant-caps: all-small-caps;
+    font-size: 0.85em;
+    font-weight: 600;
+    letter-spacing: 0.11em;
+}
+
+button:hover {
+    background-color: rgb(200, 128, 176);
+    border: 1px solid rgb(200, 128, 176);
+    box-shadow: 3px 5px 7px rgba(62, 62, 62, 0.115);
+}
+
+.addButton {
+    float: right;
+}
+
+.finishButton {
+    padding-left: 10%;
+    padding-right: 10%;
+}
