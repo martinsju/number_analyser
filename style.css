@@ -95,3 +95,8 @@ button:hover {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.result {
+    margin-top: 20px;
+    line-height: 1.5em;
+}
