@@ -8,16 +8,23 @@ function addNumber() {
     const receivedText = inputArea.value
 
     if (isNaN(receivedText) || receivedText == '') {
-        //not a number or empty
         alert("Please write a number")
     } else {
-        console.log(receivedText)
-        numbersList[numbersList.length] = receivedText
-        console.log(numbersList)
+        numbersList[numbersList.length] = parseInt(receivedText)
         spanInput.innerHTML += `New number added: ${receivedText}` + "</br>"
     }
 }
 
 function calculate() {
-    console.log("Calculate working ^^")
+    if (numbersList == '') {
+        console.log("empty :(")
+    } else {
+        console.log(numbersList)
+        var sum = 0
+        for (let i = 0; i <= numbersList.length; i++) {
+            sum += numbersList[i]
+            
+        }
+        console.log("Sum is ", sum)
+    }
 }
