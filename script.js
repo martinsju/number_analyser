@@ -7,7 +7,7 @@ console.log(resultField)
 const numbersList = []
 
 function addNumber() {
-    const receivedText = inputArea.value
+    var receivedText = inputArea.value
 
     if (isNaN(receivedText) || receivedText == '') {
         alert("Please write a number")
@@ -16,8 +16,7 @@ function addNumber() {
         spanInput.innerHTML += `New number added: ${receivedText}` + "</br>"
     }
     inputArea.focus()
-    //Not able to empty
-    // inputArea.innerHTML = ""
+    inputArea.value = ''
 }
 
 function calculate() {
