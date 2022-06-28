@@ -1,8 +1,6 @@
 const inputArea = document.querySelector("#receivedText")
-// const textarea = document.querySelector("textarea")
 const spanInput = document.querySelector("#spanInput")
 const resultField = document.querySelector("#result")
-console.log(resultField)
 
 const numbersList = []
 
@@ -21,21 +19,19 @@ function addNumber() {
 
 function calculate() {
     if (numbersList == '') {
-        console.log("empty :(")
+        alert("List is empty :(")
     } else {
-        console.log(numbersList)
         var sum = 0
         var biggest = numbersList[0]
         var smallest = numbersList[0]
+        var total = numbersList.length
         for (let i = 0; i < numbersList.length; i++) {
             sum += numbersList[i]
             biggest = biggest > numbersList[i] ? biggest : numbersList[i]
             smallest = smallest < numbersList[i] ? smallest : numbersList[i]
         }
         var average = sum / numbersList.length
-        console.log("Sum is ", sum)
-        console.log("Average is ", average)
-
-        resultField.innerHTML = `Biggest value is ${biggest}<br>Smaller value is ${smallest}<br>Values sum is ${sum}</br>Values average is ${average}`
+     
+        resultField.innerHTML = `There are ${total} numbers in the list</br>Biggest value is ${biggest}<br>Smaller value is ${smallest}<br>Values sum is ${sum}</br>Values average is ${average}`
     }
 }
